@@ -1,0 +1,142 @@
+/* Global styling */
+body {
+    margin: 0;
+    background-color: rgb(2, 34, 50);
+    color: #333;
+    background: linear-gradient(45deg, #50e3c2, #4a90e2);
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Header styling */
+  header {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+  }
+  header h1 {
+    color: white;
+  }
+  header > p {
+    font-style: italic;
+    color: white;
+  }
+  
+  /* Form container styling */
+  .form-container {
+    background: #f4f6f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: teal;
+    position: relative;
+  }
+  
+  /* Form element styling */
+  #survey-form input,
+  #survey-form select,
+  #survey-form textarea {
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    position: relative;
+  }
+  
+  #survey-form input:focus {
+    outline-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  #survey-form input::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 0.8em;
+  }
+  
+  /* Specific input styling for text, email, and age */
+  #name,
+  #email,
+  #number {
+    width: 100%;
+  }
+  
+  /* Textarea styling */
+  #comments {
+    width: 100%;
+    height: 100px;
+    word-wrap: break-word;
+    background-color: white;
+  }
+  
+  /* Button styling */
+  #submit {
+    background-color: teal;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submit:hover {
+    background-color: turquoise;
+    color: black;
+  }
+  
+  /* Label and text styling */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Radio and checkbox elements */
+  .radio-group,
+  .checkbox-group {
+    margin-left: 15px;
+  }
+  
+  /* Styling for select dropdown */
+  select {
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  select option {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Ensuring form is responsive */
+  @media (max-width: 600px) {
+    .form-container {
+      max-width: 90%;
+    }
+  
+    #comments {
+      height: 80px;
+    }
+  
+    #submit {
+      padding: 12px;
+    }
+  }
+  

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We appreciate your feedback! Please fill out the survey form below.</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="survey-form" action="#" method="post">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                    id="name" 
+                    type="text" 
+                    name="name" 
+                    placeholder="Enter your name" 
+                    required>
+
+                <label id="email-label" for="email">Email</label>
+                <input 
+                    id="email" 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required>
+
+                <label id="number-label" for="number">Age</label>
+                <input 
+                    id="number" 
+                    type="number" 
+                    name="age" 
+                    min="10" 
+                    max="100" 
+                    placeholder="Enter your age" 
+                    required>
+
+                <label for="dropdown">Select your role</label>
+                <select id="dropdown" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                </select>
+
+                <p>Would you recommend freeCodeCamp?</p>
+                <div class="radio-group">
+                    <input type="radio" name="recommend" value="definitely" id="definitely" required>
+                    <label for="definitely">Definitely</label><br>
+
+                    <input type="radio" name="recommend" value="maybe" id="maybe">
+                    <label for="maybe">Maybe</label><br>
+
+                    <input type="radio" name="recommend" value="not_sure" id="not_sure">
+                    <label for="not_sure">Not Sure</label><br>
+                </div>
+
+                <p>Select your favorite features:</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="feature" value="challenges" id="challenges">
+                    <label for="challenges">Challenges</label><br>
+
+                    <input type="checkbox" name="feature" value="projects" id="projects">
+                    <label for="projects">Projects</label><br>
+
+                    <input type="checkbox" name="feature" value="community" id="community">
+                    <label for="community">Community</label><br>
+                </div>
+
+                <label for="comments">Any additional comments:</label>
+                <textarea 
+                    id="comments" 
+                    name="comments" 
+                    placeholder="Enter your comments here"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
